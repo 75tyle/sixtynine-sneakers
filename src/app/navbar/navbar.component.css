@@ -1,6 +1,5 @@
 
-.navbar{
-}
+
 span{
     font-family: 'Inter', sans-serif;
     font-size: 10px;
@@ -24,7 +23,7 @@ span.street{
 }
 
 span.bag_text{
-    margin-left: 7px;
+    margin-left: 6px;
 }
 .search{
     border: none;

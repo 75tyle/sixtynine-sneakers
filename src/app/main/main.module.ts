@@ -10,6 +10,7 @@ import { SneakerCardsComponent } from './sneaker-cards/sneaker-cards.component';
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports:[SneakerCardsComponent]
 })
 export class MainModule { }

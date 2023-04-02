@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarModule } from './navbar/navbar.module';
+import {MainModule} from './main/main.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
@@ -16,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     NavbarModule,
+    MainModule,
     BrowserAnimationsModule
   ],
   providers: [],

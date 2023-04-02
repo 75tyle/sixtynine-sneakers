@@ -1,0 +1,97 @@
+.sneaker_cards{
+
+}
+.img_1{
+    display: none;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.sneaker_img1:hover .img_1{
+    display: flex;
+}
+
+.img_2{
+    display: none;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+}
+.sneaker_img2:hover .img_2{
+    display: flex;
+}
+
+.img_3{
+    display: none;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.sneaker_img3:hover .img_3{
+    display: flex;
+}
+
+.img_4{
+    display: none;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.sneaker_img4:hover .img_4{
+    display: flex;
+}
+
+.img_5{
+    display: none;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.sneaker_img5:hover .img_5{
+    display: flex;
+}
+
+.img_6{
+    display: none;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.sneaker_img6:hover .img_6{
+    display: flex;
+}
+
+.img_7{
+    display: none;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.sneaker_img7:hover .img_7{
+    display: flex;
+}
+
+.img_8{
+    display: none;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.sneaker_img8:hover .img_8{
+    display: flex;
+}
