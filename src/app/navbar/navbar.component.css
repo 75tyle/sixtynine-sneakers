@@ -1,5 +1,3 @@
-
-
 span{
     font-family: 'Inter', sans-serif;
     font-size: 10px;
@@ -32,4 +30,11 @@ span.bag_text{
     height: 35px;
     padding-left: 15px;
     
+}
+.bidicon{
+    justify-content: center;
+    display: inline-grid;
+}
+.listing{
+    left: -3px;
 }
