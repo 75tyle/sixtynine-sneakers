@@ -1,1 +1,27 @@
-<p>register works!</p>
+
+<div class="main_frame d-flex justify-content-center">
+    <div class="sub_content py-4 d-grid justify-content-center">
+        
+        <div class="user_details  row d-grid">
+            <div class="buttons" style="margin-bottom: 15px;">
+                <div class="signup_title d-flex justify-content-center rounded-0 border-dark border-bottom border-3">Sign Up</div>
+            </div>
+            
+              
+             <form [formGroup]="forms" class="p-0">
+                <div class="form-gorup p-0">
+                    <input  type="text" placeholder="Name" name="user_name"  class="form-control" style="margin-bottom: 5px;">
+                    <input formControlName="user_mobile_number" type="text" placeholder="Phone no." name="user_email_address"  class="form-control" style="margin-bottom: 5px;">
+                    <input formControlName="user_email_address" type="text" placeholder="Email" name="user_mobile_number"  class="form-control"style="margin-bottom: 5px;">
+                    <input formControlName="user_password" type="password" placeholder="Password" name="user_password"  class="form-control" style="margin-bottom: 8px;">
+                </div>
+             </form> 
+          
+            
+            
+            <div class="signup  btn btn-outline-dark d-flex justify-content-center align-items-center  rounded-0" (click)="Submitdata()" style="margin-bottom: 5px;">Sign Up</div>
+            <span>If you already have an account <a [routerLink]="['/registration']">Log In</a></span>
+        </div>
+        
+    </div>
+</div>

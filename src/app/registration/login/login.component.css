@@ -1,7 +1,27 @@
 .sub_content{
     width: 350px;
 }
-.login_btn{
-    position: relative;
-    left: 28px;
+input{
+    height: 45px;
+}
+.login{
+    height: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+
+}
+.login_title{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+span{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+a{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
 }

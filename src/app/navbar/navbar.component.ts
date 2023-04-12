@@ -7,44 +7,46 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+ 
   check_login:boolean=true
+  url:string = "http://localhost:4200"
   naam={
     'col-12':false,
     'col-6':false
+  }
+  login(){
+    this.router.navigate(['registration'])
   }
   constructor(private router:Router) {
    
     
   }
+
   ngOnInit(): void {
+    debugger
   console.log(window.location.href)
-//   this.router.events.subscribe(res =>{
-// var data:any = res
-// console.log(data.url)
-// debugger
-// if (data.url='/'){
-//  console.log('you are in login page')
-//  this.check_login=false
-//  this.naam['col-12']=true
-// }else{
-// this.check_login=true
-// this.naam['col-12']=false
-// this.naam['col-6']=true
-// console.log('notin')
-
-// }
-
-//    })
-
-if(window.location.href == "http://localhost:59293/mainpage"){
-  this.check_login=true
-  this.naam['col-12']=false
-this.naam['col-6']=true
-}else{
-  this.check_login=false
-  this.naam['col-12']=true
-this.naam['col-6']=false
-}
-
+  if(window.location.href == this.url+'/registration' || window.location.href == this.url+'/registration/register'){
+    this.check_login=false
+    this.naam['col-12']=true
+    this.naam['col-6']=false
+    }else{
+      this.check_login=true
+      this.naam['col-12']=false
+    this.naam['col-6']=true
+    }
   }
+
+  navigation_check(){
+  
+  }
+  navigate(){
+    
+    this.router.navigate(['/'])
+
+    this.check_login=true
+    this.naam['col-12']=false
+  this.naam['col-6']=true
+  
+  }
+
 }

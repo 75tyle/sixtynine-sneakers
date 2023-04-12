@@ -4,11 +4,12 @@ import { SneakerCardsComponent } from './main/sneaker-cards/sneaker-cards.compon
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'registration',
     loadChildren: () => import('../app/registration/registration.module').then(m => m.RegistrationModule)
   },
   {
-    path:'mainpage', component:SneakerCardsComponent
+    
+    path:'', component:SneakerCardsComponent
   }
 ];
 

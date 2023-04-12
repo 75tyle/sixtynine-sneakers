@@ -1,15 +1,20 @@
 <div class="main_frame d-flex justify-content-center">
     <div class="sub_content py-4 d-grid justify-content-center">
-        <div class="buttons" style="margin-bottom: 15px;">
-            <div class="signup_btn btn  rounded-0 border-bottom border-3">Sign Up</div>
-            <div class="login_btn btn rounded-0 border-bottom border-3">Log In</div>
+        
+        <div class="login_user_details  row d-grid">
+            <div class="buttons" style="margin-bottom: 15px;">
+                <div class="login_title d-flex justify-content-center rounded-0 border-dark border-bottom border-3">Log In</div>
+            </div>
+            <form [formGroup]="forms" class="p-0">
+                <div class="form-group p-0">
+                    <input formControlName="login_user" type="email" class="form-control" placeholder="Email" style="margin-bottom: 5px;">
+                    <input formControlName="login_password" type="password" class="form-control" placeholder="Password" style="margin-bottom: 8px;">
+                </div>
+            </form>
+
+            <div class="login  btn btn-outline-dark d-flex justify-content-center align-items-center rounded-0" (click)="Submitdata()" style="margin-bottom: 5px;">Log In</div>
+            <span>Do you have an account? <a [routerLink]="['register']" >Create one</a></span>
         </div>
-        <div class="user_details  row d-grid">
-            <input type="text" placeholder="First name" style="margin-bottom: 5px;">
-            <input type="text" placeholder="Last name" style="margin-bottom: 5px;">
-            <input type="email" placeholder="Email" style="margin-bottom: 5px;">
-            <input type="password" placeholder="Password" style="margin-bottom: 5px;">
-        </div>
-        <div class="signup btn btn-primary">Sign Up</div>
+        
     </div>
 </div>
