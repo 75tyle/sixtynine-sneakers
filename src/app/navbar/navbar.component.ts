@@ -14,8 +14,13 @@ export class NavbarComponent implements OnInit {
     'col-12':false,
     'col-6':false
   }
+
+
   login(){
     this.router.navigate(['registration'])
+    this.check_login=false
+    this.naam['col-12']=true
+    this.naam['col-6']=false
   }
   constructor(private router:Router) {
    
@@ -23,7 +28,6 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    debugger
   console.log(window.location.href)
   if(window.location.href == this.url+'/registration' || window.location.href == this.url+'/registration/register'){
     this.check_login=false
