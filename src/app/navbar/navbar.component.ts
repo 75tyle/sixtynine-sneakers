@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { HostListener } from '@angular/core';
+
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +9,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
- 
+
+
   check_login:boolean=true
   url:string = "http://localhost:4200"
   naam={
@@ -52,5 +55,18 @@ export class NavbarComponent implements OnInit {
   this.naam['col-6']=true
   
   }
-
+  @HostListener('window:popstate', ['$event'])
+  onPopState(event:any) {
+    console.log('Back button pressed');
+    if(window.location.href == this.url+'/'){
+      this.check_login=true
+      this.naam['col-12']=false
+      this.naam['col-6']=true
+    }else{
+      this.check_login=false
+      this.naam['col-12']=true
+      this.naam['col-6']=false
+    }
+   
+  }
 }
