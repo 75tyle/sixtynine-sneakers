@@ -8,9 +8,11 @@ import {MainModule} from './main/main.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
+    
    
   ],
   imports: [

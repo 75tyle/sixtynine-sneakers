@@ -8,6 +8,10 @@ const routes: Routes = [
     loadChildren: () => import('../app/registration/registration.module').then(m => m.RegistrationModule)
   },
   {
+    path: 'bidding',
+    loadChildren: () => import('../app/bidding/bidding.module').then(m => m.BiddingModule)
+  },
+  {
     
     path:'', component:SneakerCardsComponent
   }
