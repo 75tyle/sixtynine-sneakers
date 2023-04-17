@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { BiddingRoutingModule } from './bidding-routing.module';
 import { BiddingComponent } from './bidding/bidding.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,8 @@ import { BiddingComponent } from './bidding/bidding.component';
   ],
   imports: [
     CommonModule,
-    BiddingRoutingModule
+    BiddingRoutingModule,
+    FormsModule
   ]
 })
 export class BiddingModule { }
