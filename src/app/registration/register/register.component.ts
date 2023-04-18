@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 @Component(
     {
         selector: 'app-register',
@@ -16,6 +17,7 @@ this.forms = this.fb.group({
     user_email_address:[''],
      user_mobile_number:[''],
      user_password:['']
+    
 })
      }
     Submitdata() {
