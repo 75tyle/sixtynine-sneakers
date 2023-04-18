@@ -8,13 +8,29 @@ input::-webkit-inner-spin-button {
 <div class="main_frame d-flex">
     <div class="product col-6 d-grid p-5 w-50"><span class="product_tag">Nike Air Max 90<br>Last Bid-$69</span><img src="../../../assets/sneaker1.png" width="450px" height="450px"></div>
     <div class="sub_frame d-gridcol-6 d-grid justify-content-center align-items-center w-50 px-5">
-        <div class="bidding_frame border border-2">
-            <div class="currentbid_price border d-flex justify-content-center border-2 " ><span>Current Bid-$69</span></div>
-            <div class="place_bid d-flex">
-                <form class="" >
-                    <input class="form-control" type="number" placeholder="Place Bid">
+        <div class="bidding_frame border  border-1 rounded-1">
+            <div class="currentbid_price border border-dark border-1 rounded-1 d-flex justify-content-center " ><span>Current Bid-$69</span></div>
+            <div class="place_bid  d-flex">
+                <form class="bid_price_frame border border-dark rounded-1 border-1 " >
+                    <input class="bid_price border border-0 form-control" type="number" placeholder="Place Bid">
                 </form>
-            <div class="btn btn-outline-dark">Bid</div></div> 
+            <div class=" bid_btn btn rounded-1 btn-outline-dark">Bid</div></div>
+            <hr>
+            <div class="wrapper">
+                <p class="targe-date">
+                  Countdown to {{ months[month] + ' ' + day + ', ' + year }}
+                </p>
+                <div class="description d-flex row">
+                  <p class="col-4">Hours</p>
+                  <p class="col-4">Minutes</p>
+                  <p class="col-4">Seconds</p>
+                </div>
+                <div class="times d-flex row">
+                  <p class="col-4" id="hours"></p>
+                  <p class="col-4" id="mins"></p>
+                  <p class="col-4" id="seconds"></p>
+                </div>
+              </div>
         </div>    
     </div>
 </div>
