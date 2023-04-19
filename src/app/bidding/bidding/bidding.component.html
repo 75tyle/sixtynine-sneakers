@@ -18,18 +18,18 @@ input::-webkit-inner-spin-button {
             <hr>
             <div class="wrapper">
                 <p class="targe-date">
-                  Countdown to {{ months[month] + ' ' + day + ', ' + year }}
+                ENDS IN
                 </p>
-                <div class="description d-flex row">
-                  <p class="col-4">Hours</p>
-                  <p class="col-4">Minutes</p>
-                  <p class="col-4">Seconds</p>
-                </div>
-                <div class="times d-flex row">
-                  <p class="col-4" id="hours"></p>
-                  <p class="col-4" id="mins"></p>
-                  <p class="col-4" id="seconds"></p>
-                </div>
+                    <div class="times d-flex row">
+                        <p class="col-4 d-flex justify-content-end m-0" >{{hr}}</p>
+                        <p class="col-4 d-flex justify-content-center m-0">{{min}}</p>
+                        <p class="col-4 m-0">{{sec}}</p>
+                      </div>
+                      <div class="description d-flex row">
+                          <p class="time_des d-flex justify-content-end col-4">Hours</p>
+                          <p class="time_des d-flex justify-content-center col-4">Minutes</p>
+                          <p class="time_des col-4">Seconds</p>
+                        </div>
               </div>
         </div>    
     </div>

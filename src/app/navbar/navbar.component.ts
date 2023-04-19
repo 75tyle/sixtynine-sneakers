@@ -58,7 +58,7 @@ export class NavbarComponent implements OnInit {
   @HostListener('window:popstate', ['$event'])
   onPopState(event:any) {
     console.log('Back button pressed');
-    if(window.location.href == this.url+'/'){
+    if(window.location.href == this.url+'/'||window.location.href == this.url+'/bidding'){
       this.check_login=true
       this.naam['col-12']=false
       this.naam['col-6']=true
