@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AfterViewInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-bidding',
@@ -13,7 +13,7 @@ export class BiddingComponent {
   title = 'sixtynine-sneakers';
   timer:number = 86400
   hr:number =23
-  min:number =60
+  min:number =1
   sec:number=60
 
 

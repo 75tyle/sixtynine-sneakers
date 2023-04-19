@@ -12,6 +12,10 @@ const routes: Routes = [
     loadChildren: () => import('../app/bidding/bidding.module').then(m => m.BiddingModule)
   },
   {
+    path: 'bag',
+    loadChildren: () => import('../app/bag/bag.module').then(m => m.BagModule)
+  },
+  {
     
     path:'', component:SneakerCardsComponent
   }

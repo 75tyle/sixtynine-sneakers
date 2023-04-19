@@ -18,7 +18,9 @@ export class NavbarComponent implements OnInit {
     'col-6':false
   }
 
-
+  bag(){
+    this.router.navigate(['bag'])
+  }
   login(){
     this.router.navigate(['registration'])
     this.check_login=false
@@ -58,7 +60,7 @@ export class NavbarComponent implements OnInit {
   @HostListener('window:popstate', ['$event'])
   onPopState(event:any) {
     console.log('Back button pressed');
-    if(window.location.href == this.url+'/'||window.location.href == this.url+'/bidding'){
+    if(window.location.href == this.url+'/'||window.location.href == this.url+'/bidding'||window.location.href == this.url+'/bag'){
       this.check_login=true
       this.naam['col-12']=false
       this.naam['col-6']=true
