@@ -13,7 +13,7 @@ export class BiddingComponent {
   title = 'sixtynine-sneakers';
   timer:number = 86400
   hr:number =23
-  min:number =1
+  min:number =60
   sec:number=60
 
 
