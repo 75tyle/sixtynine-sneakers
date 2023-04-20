@@ -95,3 +95,11 @@
 .sneaker_img8:hover .img_8{
     display: flex;
 }
+.sneakers {
+ width: 25%;
+ height: 25%;
+}
+.sneakers img{
+    height: auto;
+    width: 100%;
+}

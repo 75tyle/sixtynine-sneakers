@@ -10,3 +10,18 @@
 .bid_products{
     height: 150px;
 }
+.product_name{
+    font-family: 'Inter', sans-serif;
+    font-weight:400;
+    font-size: 20px;
+}
+.product_price{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;    
+}
+.product_size{
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+}

@@ -42,3 +42,15 @@ a{
     color: black;
     text-decoration: none;
 }
+.sixtyninelogo{
+    cursor: pointer;
+}
+.usericon{
+    cursor: pointer;
+}
+.bidicon{
+    cursor: pointer;
+}
+.bagicon{
+    cursor: pointer; 
+}
