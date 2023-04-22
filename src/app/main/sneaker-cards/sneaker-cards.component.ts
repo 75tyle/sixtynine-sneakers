@@ -11,12 +11,13 @@ export class SneakerCardsComponent implements OnInit {
   
   product:any[]=[]
   snkr(id:any){
+    this.router.navigate(['/bidding'], { queryParams: { id } });
     console.log(id)
     for(let i = 0;i<product.length;i++){
     console.log(product[i].id)
     if(product[i].id == id){
       console.log(product[i])
-      this.router.navigate(['bidding'])
+    
     }
     
     }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { timer } from 'rxjs';
 
 @Component({
@@ -8,5 +8,6 @@ import { timer } from 'rxjs';
 })
 export class AppComponent {
  
+
 }
 

@@ -1,23 +1,25 @@
-import { Component } from '@angular/core';
-
-
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Route } from '@angular/router';
+import { product } from 'src/app/Product';
 @Component({
   selector: 'app-bidding',
   templateUrl: './bidding.component.html',
   styleUrls: ['./bidding.component.css']
 })
-export class BiddingComponent {
+export class BiddingComponent implements OnInit {
 
 
-
+  items:any={}
   title = 'sixtynine-sneakers';
   timer:number = 86400
   hr:number =23
   min:number =60
   sec:number=60
+product: any;
+  id!: number;
 
 
-  constructor() {
+  constructor(private route:ActivatedRoute) {
 this.tu()
   }
   tu(){
@@ -45,4 +47,18 @@ this.tu()
   seconds(){
   
   }
+  ngOnInit():void{
+    debugger
+    this.id = Number(this.route.snapshot.queryParamMap.get('id'));
+    for(let i = 0;i<product.length;i++){
+      console.log(product[i].id)
+      if(product[i].id == this.id){
+        console.log(product[i])
+      this.items=product[i]
+      console.log(this.items)
+      }
+      
+      }
+  }
+  
 }
