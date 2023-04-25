@@ -34,7 +34,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
 this.active.queryParams.subscribe(res =>{
-  if(window.location.href == this.url+'registration/register'||window.location.href == this.url+'/registration'){
+  if(window.location.href == this.url+'/'||window.location.href == this.url+'/bidding'||window.location.href == this.url+'/bag'){
     this.check_login=true
     this.naam['col-12']=false
     this.naam['col-6']=true
@@ -45,16 +45,16 @@ this.active.queryParams.subscribe(res =>{
   }
 })
   console.log(window.location.href)
-  if(window.location.href == this.url+'/registration' || window.location.href == this.url+'/registration/register'){
-    this.check_login=false
-    this.naam['col-12']=true
-    this.naam['col-6']=false
-    }else{
-      this.check_login=true
-      this.naam['col-12']=false
-    this.naam['col-6']=true
-    }
-  }
+  // if(window.location.href == this.url+'/registration' || window.location.href == this.url+'/registration/register'){
+  //   this.check_login=false
+  //   this.naam['col-12']=true
+  //   this.naam['col-6']=false
+  //   }else{
+  //     this.check_login=true
+  //     this.naam['col-12']=false
+  //   this.naam['col-6']=true
+  //   }
+   }
 
   navigation_check(){
   
@@ -72,7 +72,7 @@ this.active.queryParams.subscribe(res =>{
   @HostListener('window:popstate', ['$event'])
   onPopState(event:any) {
     console.log('Back button pressed');
-    if(window.location.href == this.url+'registration/register'||window.location.href == this.url+'/registration'){
+    if(window.location.href == this.url+'/'||window.location.href == this.url+'/bidding'||window.location.href == this.url+'/bag'){
       this.check_login=true
       this.naam['col-12']=false
       this.naam['col-6']=true
@@ -84,3 +84,7 @@ this.active.queryParams.subscribe(res =>{
    
   }
 }
+  function navigation_check() {
+    throw new Error('Function not implemented.');
+  }
+
